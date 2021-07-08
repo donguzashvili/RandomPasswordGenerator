@@ -46,12 +46,17 @@ export default class MainComponent extends React.Component {
     const generate = (length, string) => {
       let generatedPassword = "";
 
-      for (let i = 0; i < length; i++) {
-        generatedPassword += string.charAt(
-          Math.floor(Math.random() * string.length)
-        );
+      //check if nothing was checked from checkbox
+      if (string === "") {
+        this.setState({ password: "Please check at least one option" });
+      } else {
+        for (let i = 0; i < length; i++) {
+          generatedPassword += string.charAt(
+            Math.floor(Math.random() * string.length)
+          );
+        }
+        this.setState({ password: generatedPassword });
       }
-      this.setState({ password: generatedPassword });
     };
     generate(passLength, checkedData);
   };

@@ -1,6 +1,7 @@
 .rain {
   height: 100vh;
   background-image: url(../assets/image/rain.png);
+  background-position: center;
   animation: rain 0.25s linear infinite;
   position: absolute;
   top: 0;
@@ -13,7 +14,7 @@
   height: 100%;
   width: 100%;
   background: white;
-  animation: lighting 3s linear infinite;
+  animation: lighting 5s linear infinite;
   opacity: 0;
 }
 audio {
@@ -36,7 +37,7 @@ audio {
   0% {
     opacity: 1;
   }
-  10% {
+  7% {
     opacity: 0;
   }
   11% {
@@ -45,7 +46,7 @@ audio {
   14% {
     opacity: 1;
   }
-  20% {
+  18% {
     opacity: 0;
   }
   21% {
@@ -75,7 +76,7 @@ audio {
   69% {
     opacity: 1;
   }
-  75% {
+  73% {
     opacity: 0;
   }
   100% {
