@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./MovingMan.css";
 
 export default class MovingMan extends React.Component {

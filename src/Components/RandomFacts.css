@@ -1,0 +1,64 @@
+#RandomFactsWrapper {
+  display: flex;
+  position: absolute;
+  top: calc(50% - 300px / 2);
+  left: -90vw;
+  z-index: 6;
+}
+.openFacts {
+  display: grid;
+  width: 130px;
+}
+.openFacts p {
+  transform: rotate(-90deg);
+  color: white;
+  white-space: nowrap;
+  cursor: default;
+}
+.openFacts svg {
+  color: white;
+  cursor: pointer;
+}
+.factArea {
+  margin-top: 0;
+  height: 105px;
+  align-items: center;
+  text-align: center;
+}
+.randomFactsContainer {
+  background: black;
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 3px gray;
+  box-shadow: white 0 0 20px;
+  width: 90vw;
+  height: 300px;
+}
+.randomFactsContainer button {
+  cursor: pointer;
+  display: flex;
+  margin: 0 auto;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  box-shadow: white 0 0 5px;
+  border: transparent;
+  padding: 5px;
+}
+.randomFactsContainer h3 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.randomFactsContainer p {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+@media screen and (max-width: 320px) {
+  .randomFactsContainer p {
+    font-size: 13px;
+  }
+}
