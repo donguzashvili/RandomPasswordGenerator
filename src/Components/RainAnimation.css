@@ -1,0 +1,92 @@
+.rain {
+  height: 100vh;
+  background-image: url(../assets/image/rain.png);
+  animation: rain 0.25s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.rain::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  animation: lighting 3s linear infinite;
+  opacity: 0;
+}
+audio {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 150px);
+}
+
+/*key frames */
+
+@keyframes rain {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 20% 100%;
+  }
+}
+@keyframes lighting {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 0;
+  }
+  14% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  21% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+  }
+  37% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  46% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*media querys */
+@media screen and (max-width: 280px) {
+  audio {
+    width: 200px;
+    left: calc(50% - 100px);
+  }
+}

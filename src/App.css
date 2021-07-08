@@ -23,10 +23,11 @@ body {
 .header {
   padding: 20px;
   margin: 20px 0 50px;
-  background: rgba(0, 0, 0, 0.16);
+  background: rgba(0, 0, 0);
   border: 3px solid #001aff;
   border-radius: 10px;
   box-shadow: #001aff 0 0 40px;
+  z-index: 2;
 }
 .header:hover {
   border: 3px solid #ff0000;
@@ -43,11 +44,12 @@ body {
 .passwordGeneratorContainer {
   display: grid;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.31);
+  background: rgba(0, 0, 0);
   border: 3px solid #0400da;
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: blue 0 0 40px;
+  z-index: 2;
 }
 .passwordGeneratorContainer:hover {
   border: 3px solid #ff0000;
@@ -183,7 +185,7 @@ form {
 
 @media screen and (max-width: 320px) {
   .header {
-    margin: 20px 0;
+    margin: 50px 0 10px;
   }
 }
 
