@@ -1,0 +1,202 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url(./assets/image/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  padding: 50px;
+}
+.header {
+  padding: 20px;
+  margin: 20px 0 50px;
+  background: rgba(0, 0, 0, 0.16);
+  border: 3px solid #001aff;
+  border-radius: 10px;
+  box-shadow: #001aff 0 0 40px;
+}
+.header:hover {
+  border: 3px solid #ff0000;
+  box-shadow: #ff0000 0 0 40px;
+}
+.wrapper h1 {
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+  white-space: nowrap;
+}
+.passwordGeneratorContainer {
+  display: grid;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.31);
+  border: 3px solid #0400da;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: blue 0 0 40px;
+}
+.passwordGeneratorContainer:hover {
+  border: 3px solid #ff0000;
+  box-shadow: #ff0000 0 0 40px;
+}
+.passwordGeneratorContainer:hover > .generatedPassword {
+  border: 3px solid #0400da;
+}
+
+.generatedPassword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 253, 253, 0.26);
+  border: 3px solid #00f0ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  margin: 20px;
+  box-shadow: #00f0ff 0 0 20px;
+}
+.generatedPassword:hover {
+  border: 3px solid #0400da;
+  box-shadow: #0400da 0 0 20px;
+}
+.generatedPassword p {
+  color: white;
+  font-size: 1.5rem;
+}
+.copyIcon {
+  color: white;
+  margin: 10px;
+}
+.copyIcon:hover {
+  cursor: pointer;
+}
+.copyIcon:hover ~ .hiddenText {
+  display: flex;
+}
+.hiddenText {
+  position: absolute;
+  right: 0;
+  transform: translate(-20px, -20px);
+  display: none;
+  color: white;
+  border: 3px solid #001aff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+  padding: 5px;
+  border-radius: 5px;
+}
+.options {
+  display: block;
+  padding: 20px;
+}
+.options h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+.lengthWrapper {
+  display: block;
+  padding: 10px;
+}
+.lengthWrapper label {
+  color: white;
+  display: block;
+}
+.lengthWrapper input {
+  display: flex;
+  margin: 10px auto;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+form {
+  display: block;
+}
+.length {
+  display: flex;
+  justify-content: center;
+}
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.btnContainer button {
+  background: rgba(0, 0, 0, 0.49);
+  border: 3px solid #00f0ff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 24px;
+  cursor: pointer;
+  box-shadow: #00f0ff 0 0 10px;
+}
+.btnContainer button:hover {
+  border: 3px solid #001aff;
+  box-shadow: #001aff 0 0 10px;
+}
+.checkBoxs {
+  display: flex;
+  justify-content: center;
+}
+.checkBoxs input {
+  transform: scale(2);
+}
+
+/*media querys*/
+@media screen and (max-width: 375px) {
+  .passwordGeneratorContainer {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .generatedPassword {
+    margin: 20px auto;
+    width: 240px;
+  }
+  .generatedPassword p {
+    font-size: 1rem;
+  }
+  .lengthWrapper {
+    padding: 5px;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .options h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .passwordGeneratorContainer {
+    width: 265px;
+  }
+  .checkBoxs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lengthWrapper label {
+    text-align: center;
+    white-space: nowrap;
+  }
+}
