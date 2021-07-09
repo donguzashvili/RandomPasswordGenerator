@@ -85,52 +85,76 @@ export default class MainComponent extends React.Component {
 
             <form onSubmit={this.generatePassword}>
               <div className="length">
-                <div className="lengthWrapper">
-                  <label htmlFor="8">8 Units</label>
-                  <input
-                    type="radio"
-                    name="Units"
-                    value="8"
-                    id="8"
-                    defaultChecked
-                  />
+                <div className="lengthWrapper radio">
+                  <label htmlFor="8">
+                    8 Units
+                    <input
+                      type="radio"
+                      name="Units"
+                      value="8"
+                      id="8"
+                      defaultChecked
+                    />
+                    <span></span>
+                  </label>
                 </div>
 
-                <div className="lengthWrapper">
-                  <label htmlFor="10">10 Units</label>
-                  <input type="radio" name="Units" value="10" id="10" />
+                <div className="lengthWrapper radio">
+                  <label htmlFor="10">
+                    10 Units
+                    <input type="radio" name="Units" value="10" id="10" />
+                    <span></span>
+                  </label>
                 </div>
 
-                <div className="lengthWrapper">
-                  <label htmlFor="12">12 Units</label>
-                  <input type="radio" name="Units" value="12" id="12" />
+                <div className="lengthWrapper radio">
+                  <label htmlFor="12">
+                    12 Units
+                    <input type="radio" name="Units" value="12" id="12" />
+                    <span></span>
+                  </label>
                 </div>
 
-                <div className="lengthWrapper">
-                  <label htmlFor="14">14 Units</label>
-                  <input type="radio" name="Units" value="14" id="14" />
+                <div className="lengthWrapper radio">
+                  <label htmlFor="14">
+                    14 Units
+                    <input type="radio" name="Units" value="14" id="14" />
+                    <span></span>
+                  </label>
                 </div>
               </div>
 
               <div className="checkBoxs">
                 <div className="lengthWrapper">
-                  <label htmlFor="UpperCase">UpperCase</label>
-                  <input type="checkbox" value="UpperCase" id="UpperCase" />
+                  <label htmlFor="UpperCase">
+                    UpperCase
+                    <input type="checkbox" value="UpperCase" id="UpperCase" />
+                    <span></span>
+                  </label>
                 </div>
 
                 <div className="lengthWrapper">
-                  <label htmlFor="LowerCase">LowerCase</label>
-                  <input type="checkbox" value="LowerCase" id="LowerCase" />
+                  <label htmlFor="LowerCase">
+                    LowerCase
+                    <input type="checkbox" value="LowerCase" id="LowerCase" />
+                    <span></span>
+                  </label>
                 </div>
 
                 <div className="lengthWrapper">
-                  <label htmlFor="Symbol">Symbol</label>
-                  <input type="checkbox" value="Symbol" id="symbol" />
+                  <label htmlFor="symbol">
+                    Symbol
+                    <input type="checkbox" value="Symbol" id="symbol" />
+                    <span></span>
+                  </label>
                 </div>
 
                 <div className="lengthWrapper">
-                  <label htmlFor="Numbers">Numbers</label>
-                  <input type="checkbox" value="Numbers" id="numbers" />
+                  <label htmlFor="numbers">
+                    Numbers
+                    <input type="checkbox" value="Numbers" id="numbers" />
+                    <span></span>
+                  </label>
                 </div>
               </div>
 

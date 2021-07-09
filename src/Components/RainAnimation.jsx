@@ -6,7 +6,7 @@ export default function RainEffect() {
   //audio sound is too loud so made it lower
   window.onload = () => {
     let audio = document.getElementById("audio");
-    audio.volume = 0.01;
+    audio.volume = 0.02;
   };
   return (
     <div>

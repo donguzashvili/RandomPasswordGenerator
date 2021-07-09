@@ -15,6 +15,7 @@
   color: white;
   white-space: nowrap;
   cursor: default;
+  padding: 5px 0 0 0;
 }
 .openFacts svg {
   color: white;
@@ -33,9 +34,13 @@
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border: 3px gray;
-  box-shadow: white 0 0 20px;
+  box-shadow: gray 0 0 20px;
   width: 90vw;
   height: 300px;
+  transition: all 0.3s linear;
+}
+.randomFactsContainer:hover {
+  box-shadow: white 0 0 20px;
 }
 .randomFactsContainer button {
   cursor: pointer;
@@ -43,24 +48,38 @@
   margin: 0 auto;
   background: transparent;
   color: white;
-  border-radius: 8px;
+  border-radius: 30px;
+  box-shadow: inset white 0 0 5px;
+  border: 1px solid black;
+  padding: 10px;
+  transition: all 0.5s linear;
+}
+.randomFactsContainer button:hover {
   box-shadow: white 0 0 5px;
-  border: transparent;
-  padding: 5px;
+  border: 1px solid white;
 }
 .randomFactsContainer h3 {
   display: flex;
   justify-content: center;
   color: white;
+  user-select: none;
+  text-shadow: white 0 0 10px;
 }
 .randomFactsContainer p {
   display: flex;
   justify-content: center;
   color: white;
+  user-select: none;
+  text-shadow: white 0 0 5px;
 }
 
 @media screen and (max-width: 320px) {
   .randomFactsContainer p {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 280px) {
+  #RandomFactsWrapper {
+    top: calc(50% - 265px / 2);
   }
 }
