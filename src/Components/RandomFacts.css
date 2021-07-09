@@ -4,6 +4,7 @@
   top: calc(50% - 300px / 2);
   left: -90vw;
   z-index: 6;
+  transition: all 0.5s linear;
 }
 .openFacts {
   display: grid;
@@ -18,6 +19,7 @@
 .openFacts svg {
   color: white;
   cursor: pointer;
+  transition: all 0.5s linear;
 }
 .factArea {
   margin-top: 0;
